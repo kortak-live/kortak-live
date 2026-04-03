@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مباريات اليوم</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: white; margin: 0; }
+        header { background: #1e293b; padding: 15px; text-align: center; border-bottom: 2px solid #3b82f6; }
+        .container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
+        .match-card { 
+            background: #1e293b; padding: 15px; border-radius: 12px; margin-bottom: 10px; 
+            display: flex; justify-content: space-between; align-items: center; 
+            text-decoration: none; color: white; border: 1px solid #334155;
+        }
+        .team img { width: 35px; vertical-align: middle; }
+    </style>
+</head>
+<body onclick="handleAd()">
+    <header>📅 مباريات اليوم</header>
+    <div class="container">
+        <a href="watch.html?title=ريال مدريد ضد سيتي&url=رابط_البث_هنا" class="match-card">
+            <span>ريال مدريد <img src="logo1.png"></span>
+            <span style="color:#3b82f6">22:00</span>
+            <span><img src="logo2.png"> مان سيتي</span>
+        </a>
+        <br>
+        <a href="index.html" style="color: #3b82f6; text-decoration: none;">⬅ العودة للرئيسية</a>
+    </div>
+
+    <script>
+        let count = 0;
+        function handleAd() {
+            count++;
+            if(count % 2 === 0) window.open("رابط_إعلانك_هنا", "_blank");
+        }
+    </script>
+<script>
+    // كود الإعلانات - يفتح في أي مكان (حتى الفراغات)
+    let clickCount = 0;
+    const adUrl = "ضع_رابط_إعلانك_هنا"; // حط رابط شركتك هنا
+
+    // بنضيف "السمع" (EventListener) لكل الصفحة
+    document.addEventListener('click', function() {
+        clickCount++;
+        
+        // لو عايزه يفتح من أول ضغطة وكل ضغطة:
+        // window.open(adUrl, '_blank'); 
+
+        // لو عايزه يفتح كل ضغطتين (عشان ما يزهقش اليوزر أوي):
+        if (clickCount % 2 === 0) {
+            window.open(adUrl, '_blank');
+        }
+    });
+</script>
+
+</body>
+</html>

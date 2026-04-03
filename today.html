@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>جدول مباريات اليوم بث مباشر | KOORA 4K</title>
+    <meta name="description" content="جدول مباريات اليوم بث مباشر بدون تقطيع. تابع نتائج ومواعيد المباريات والقنوات الناقلة لجميع الدوريات الكبرى على كورة 4K.">
+    <meta name="keywords" content="مباريات اليوم، بث مباشر، جدول المباريات، ليفربول، ريال مدريد، الدوري الانجليزي، كورة اون لاين">
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --accent: #3b82f6;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header {
+            background: #1e293b;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 0 15px;
+        }
+
+        .match-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            text-decoration: none; 
+            color: inherit;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+        
+        .match-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .team {
+            text-align: center;
+            width: 35%;
+        }
+        .team img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .team div {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .mid-info {
+            text-align: center;
+            width: 30%;
+        }
+        .time {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<link rel="icon" type="image/jpeg" href="العشقق.jpg">
+
+<body>
+
+<header>KOORA 4K</header>
+
+<div class="container">
+    <h4 style="color: #94a3b8;">● مباريات اليوم</h4>
+
+    <a href="رابط_البث_المباشر_هنا" target="_blank" class="match-card">
+        <div class="team">
+            <img src="path_to_liverpool_logo.png" alt="ليفربول">
+            <div>ليفربول</div>
+        </div>
+        <div class="mid-info">
+            <div class="time">22:00</div>
+        </div>
+        <div class="team">
+            <img src="path_to_mancity_logo.png" alt="مان سيتي">
+            <div>مان سيتي</div>
+        </div>
+    </a>
+
+    <a href="رابط_البث_هنا" target="_blank" class="match-card">
+        <div class="team">
+            <img src="path_to_realmadrid_logo.png" alt="ريال مدريد">
+            <div>ريال مدريد</div>
+        </div>
+        <div class="mid-info">
+            <div class="time">21:00</div>
+        </div>
+        <div class="team">
+            <img src="path_to_barcelona_logo.png" alt="برشلونة">
+            <div>برشلونة</div>
+        </div>
+    </a>
+
+    <a href="https://a8.holafluid.sbs/matches/%d8%a3%d8%b3%d8%b1%d8%b9-10-%d8%b9%d9%84%d8%a7%d8%ac%d8%a7%d8%aa-%d9%84%d9%84%d9%87%d8%b6%d9%85-%d8%a7%d9%84%d8%b3%d8%b1%d9%8a%d8%b9-%d9%81%d9%8a-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84/" target="_blank" class="match-card">
+        <div class="team">
+            <img src="path_to_lyon_logo.png" alt="ليون">
+            <div>ليون</div>
+        </div>
+        <div class="mid-info">
+            <div class="time">21:00</div>
+        </div>
+        <div class="team">
+            <img src="path_to_paris_logo.png" alt="باريس">
+            <div>باريس</div>
+        </div>
+    </a>
+
+</div>
+
+<script>
+    let clickCount = 0;
+    const adUrl = "https://www.profitablecpmratenetwork.com/qn99kcg0a0?key=fcc5c0df496e95dc276d3045391be745"; // حط رابط الإعلان هنا
+
+    document.addEventListener('click', function(e) {
+        clickCount++;
+
+        // أول ضغطتين هيفتحوا الإعلان
+        if (clickCount < 6) {
+            window.open(adUrl, '_blank');
+
+            // لو داس على ماتش (لينك) وهو لسه مخلصش الـ 3 ضغطات، امنعه يخرج
+            if (e.target.closest('a')) {
+                e.preventDefault();
+            }
+        } 
+        // من الضغطة التالتة الماتش هيفتح عادي
+        else {
+            console.log("اتفضل الرابط شغال");
+        }
+    });
+</script>
+
+</body>
+</html>
